@@ -15,8 +15,13 @@ const Homepage = () => {
   }
   return (
     <section className="text-2xl">
+      <div className="second-color relative py-5">
+        <p className="text-center text-white uppercase">
+          Weather view
+        </p>
+      </div>
       <div className="text-white items-center flex justify-around py-20 px-5">
-        <img src={world} width={100} alt="" />
+        <img src={world} width={200} alt="" />
         <h2 className="text-white text-3xl font-extrabold text-lg tracking-wide text-center my-2 px-4 align-bottom uppercase">
           Weather
           <br />

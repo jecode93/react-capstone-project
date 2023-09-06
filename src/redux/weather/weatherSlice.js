@@ -56,4 +56,8 @@ const weatherSlice = createSlice({
   },
 });
 
+export const weatherForSelectCrountry = (state, country) => state.weather.weather.find(
+  (city) => city.name === country,
+);
+
 export default weatherSlice.reducer;
