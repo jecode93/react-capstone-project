@@ -8,7 +8,7 @@ const Homepage = () => {
   // const params = useParams();
   if (isLoading) {
     return (
-      <div>
+      <div className="text-white text-center text-3xl align-middle pt-10">
         <p>Loading...</p>
       </div>
     );

@@ -1,70 +1,166 @@
-# Getting Started with Create React App
+# Capstone project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📗 Table of Contents
 
-## Available Scripts
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-In the project directory, you can run:
+# React Capstone project description
 
-### `npm start`
+> "Country weather app" is a webapp for everyone who is interested in weather and would like to check all the metrics including temperature, wind speed, humidity, etc. It is a Single Page App (SPA) that allows users to:<br>
+- Choose a country to dive deeper into its weather metrics.<br>
+- When clicked on a country it displayes all the metrics of that country capital's in regards of weather.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Built With
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- HTML.
+- CSS.
+- JavaScript
+- LINTERS.
+- REACT/REDUX.
 
-### `npm test`
+### Tech Stack <a name="tech-stack"></a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> 
 
-### `npm run build`
+<details>
+  <summary>Markup Language</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
+  </ul>
+</details>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<details>
+<summary>Style</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">Tailwind CSS</a></li>
+  </ul>
+</details>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<details>
+<summary>Layout</summary>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids">Grid</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox">Flexbox</a></li>
+  </ul>
+</details>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Key Features <a name="key-features"></a>
 
-### `npm run eject`
+> Some useful features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **[Using Grid and Flexbox for the layout]**
+- **[HTML]**
+- **[CSS]**
+- **[JAVASCRIPT]**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<!-- LIVE DEMO -->
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Getting Started
 
-## Learn More
+To get a local copy up and running follow these simple example steps.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Prerequisites
+- Visual Studio Code must be installed on your computer | Download Visual Studio Code [VSCode](https://code.visualstudio.com/)
+- Git must be installed on your computer | Download [Git](https://git-scm.com/downloads)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Setup
+- Clone the repository
+- Open the project folder in Visual Studio Code
 
-### Code Splitting
+### Install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Install this project using:
 
-### Analyzing the Bundle Size
+- cd project/directory
+- Git clone [React Captone Project](https://github.com/jecode93/react-capstone-project)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Usage
 
-### Making a Progressive Web App
+To run the project, execute the following command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- `npm run start`
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Run tests
+
+To run tests, run the following command:
+
+- `npm run test`
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+You can deploy this project using:
 
-### `npm run build` fails to minify
+- [Netlify](https://www.netlify.com/)
+- [GitHub Page](https://pages.github.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo](https://react-capstone-project-five.vercel.app/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## Authors
+
+
+👤 **Jean Emmanuel Cadet**
+
+- GitHub: [@jecode93](https://github.com/jecode93)
+- Twitter: [@jecode93](https://twitter.com/jecode93)
+- LinkedIn: [jean-emmanuel-cadet](https://www.linkedin.com/in/jean-emmanuel-cadet/)
+
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[Mobile version]**
+- [ ] **[Desktop version]**
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Thanks to the Microverse team for the great curriculum.
+- Thanks to the Code Reviewer(s) for the insightful feedback.
+- A great thanks to My coding partner(s), morning session team, and standup team for their contributions.
+- [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) the author of the original design [www.behance.net](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs))
+
+## 📝 License
+
+This project is [MIT](./LICENSE) licensed.
