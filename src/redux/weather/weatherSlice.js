@@ -4,8 +4,11 @@ const country = [
   'Haiti',
   'London',
   'Germany',
-  'Moscow',
+  'Russie',
   'Netherlands',
+  'France',
+  'Inde',
+  'Australie',
 ];
 
 export const fetchData = createAsyncThunk(

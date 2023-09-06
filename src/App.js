@@ -4,7 +4,6 @@ import './App.css';
 import { useDispatch } from 'react-redux';
 import Details from './component/pages/Details';
 import Homepage from './component/pages/Homepage';
-import Layout from './component/Layout';
 import { fetchData } from './redux/weather/weatherSlice';
 
 function App() {
@@ -17,10 +16,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Homepage />} />
-          <Route path="details" element={<Details />} />
-        </Route>
+        <Route index element={<Homepage />} />
+        <Route path="/city/:cityName" element={<Details />} />
       </Routes>
     </BrowserRouter>
   );
