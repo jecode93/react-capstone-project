@@ -1,9 +1,11 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import countriesFlag, { world } from '../../images';
 
 const Homepage = () => {
   const { weather, isLoading } = useSelector((state) => state.weather);
-
+  // const params = useParams();
   if (isLoading) {
     return (
       <div>
@@ -12,22 +14,58 @@ const Homepage = () => {
     );
   }
   return (
-    <section className="px-40 text-2xl">
-      <h1 className="mb-5">Countries</h1>
-      <div className="flex justify-between flex-wrap w-full">
-        {weather.map((list) => (
-          <div key={list.name} className="text-center text-white">
-            <div className="bg-blue-700 p-5 rounded-xl drop-shadow-xl">
-              <img src="/images/cloud.png" width={150} alt="Cloud" />
-              <p className="mb-2">
-                {list.main.temp}
-                {' '}
-                °C
-              </p>
-              <h1 className="uppercase">{list.name}</h1>
+    <section className="text-2xl">
+      <div className="text-white items-center flex justify-around py-20 px-5">
+        <img src={world} width={100} alt="" />
+        <h2 className="text-white text-3xl font-extrabold text-lg tracking-wide text-center my-2 px-4 align-bottom uppercase">
+          Weather
+          <br />
+          World
+        </h2>
+      </div>
+      <hr />
+      <h1 className="text-white text-lg tracking-wide my-2 px-4 align-bottom uppercase">Weather by Country</h1>
+      <div className="grid grid-cols-2 md:grid-cols-4">
+        {weather.map((list, index) => {
+          let className;
+          if (index % 3 === 0) {
+            className = 'first-color';
+          } else if (index % 3 === 1) {
+            className = 'second-color';
+          } else {
+            className = 'third-color';
+          }
+
+          return (
+            <div key={list.name} className="text-white">
+              <Link to={`/city/${list.name}`}>
+                <div className={className}>
+                  <div className="p-4 relative flex flex-col justify-between h-72">
+                    <div>
+                      {countriesFlag[list.name] && (
+                        <img
+                          src={countriesFlag[list.name]}
+                          alt={list.name}
+                          width={120}
+                        />
+                      )}
+                      <img className="absolute top-4 right-4" width={30} src="https://img.icons8.com/ios/50/ffffff/circled-right.png" alt="Cloud" />
+                    </div>
+                    <div className="align-bottom">
+                      <h1 className="uppercase mt-10 text-lg text-right">{list.name}</h1>
+                      <p className="my-2 text-right text-sm">
+                        <span>Temp </span>
+                        {Math.round(list.main.temp)}
+                        {' '}
+                        °C
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Link>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </section>
   );
