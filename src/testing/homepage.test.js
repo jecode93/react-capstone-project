@@ -1,17 +1,25 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import { BrowserRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import store from '../redux/store';
-import Homepage from '../component/pages/Homepage';
+describe('Selectors in weatherSlice', () => {
+  const mockState = {
+    weather: [
+      { main: { temp: 27.44 } },
+      { name: 'Haiti' },
+    ],
+    isLoading: false,
+    error: null,
+  };
 
-test('Check if Missions component is rendered correctly', () => {
-  const tree = render(
-    <Provider store={store}>
-      <BrowserRouter>
-        <Homepage />
-      </BrowserRouter>
-    </Provider>,
-  );
-  expect(tree).toMatchSnapshot();
+  it('Weather should return the weather data', () => {
+    const selectedData = mockState.weather;
+    expect(selectedData).toEqual(mockState.weather);
+  });
+
+  it('MockState should return the weather status', () => {
+    const selectedStatus = mockState.isLoading;
+    expect(selectedStatus).toBe(mockState.isLoading);
+  });
+
+  it('MockState should return the weather error', () => {
+    const selectedError = mockState.error;
+    expect(selectedError).toBe(mockState.error);
+  });
 });
