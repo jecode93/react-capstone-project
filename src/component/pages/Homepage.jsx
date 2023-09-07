@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import countriesFlag, { world } from '../../images';
 
 const Homepage = () => {
+  const [search, setSearch] = useState('');
   const { weather, isLoading } = useSelector((state) => state.weather);
-  // const params = useParams();
+
   if (isLoading) {
     return (
       <div className="text-white text-center text-3xl align-middle pt-10">
@@ -13,10 +14,21 @@ const Homepage = () => {
       </div>
     );
   }
+  const handleChange = (e) => {
+    setSearch(e.target.value);
+  };
+
+  const filtered = weather.filter((data) => {
+    const country = data.name.toLowerCase();
+    const find = search.toLowerCase();
+    return country.includes(find);
+  });
+
   return (
     <section className="text-2xl">
-      <div className="second-color relative py-5">
-        <p className="text-center text-white uppercase">
+      <div className="second-color relative py-5 flex justify-between px-5">
+        <input type="search" value={search} name="search" placeholder="Search by country name" onChange={(e) => handleChange(e)} />
+        <p className="text-white uppercase">
           Weather view
         </p>
       </div>
@@ -31,7 +43,7 @@ const Homepage = () => {
       <hr />
       <h1 className="text-white text-lg tracking-wide my-2 px-4 align-bottom uppercase">Weather by Country</h1>
       <div className="grid grid-cols-2 md:grid-cols-4">
-        {weather.map((list, index) => {
+        {filtered.map((list, index) => {
           let className;
           if (index % 3 === 0) {
             className = 'first-color';
