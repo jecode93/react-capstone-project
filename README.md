@@ -117,6 +117,7 @@ You can deploy this project using:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
+- [Video presentation](https://www.loom.com/share/5a3233e42bb241dea30aa7b2685b0ca8)
 - [Live Demo](https://react-capstone-project-five.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
