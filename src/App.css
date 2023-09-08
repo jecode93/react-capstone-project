@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
+.App {
+  text-align: center;
+}
+
+.first-color {
+  background-color: rgb(227, 84, 139);
+}
+
+.second-color {
+  background-color: rgb(206, 54, 127);
+}
+
+.third-color {
+  background-color: rgb(171, 56, 111);
+}
+
+body {
+  background-color: rgba(236, 76, 138, 1);
+  font-family: 'Lato', sans-serif;
+}
+
+input {
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 0 1rem;
+  width: 35%;
+}
+
+input::placeholder {
+  font-size: 1rem;
+}
