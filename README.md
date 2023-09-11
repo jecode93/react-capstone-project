@@ -1,4 +1,4 @@
-# Capstone project
+# React/Redux Capstone project
 
 # 📗 Table of Contents
 
@@ -21,9 +21,11 @@
 
 # React Capstone project description
 
-> "Country weather app" is a webapp for everyone who is interested in weather and would like to check all the metrics including temperature, wind speed, humidity, etc. It is a Single Page App (SPA) that allows users to:<br>
+> "Country weather app" is a web app for everyone who is interested in weather and would like to check all the metrics including temperature, wind speed, humidity, etc. It is a Single Page App (SPA) that allows users to:<br>
+
 - Choose a country to dive deeper into its weather metrics.<br>
 - When clicked on a country it displayes all the metrics of that country capital's in regards of weather.
+
 
 ## Built With
 
@@ -67,9 +69,9 @@
 - **[HTML]**
 - **[CSS]**
 - **[JAVASCRIPT]**
+- **[React/Redux]**
 
 
-<!-- LIVE DEMO -->
 
 ## Getting Started
 
