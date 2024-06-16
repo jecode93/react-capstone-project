@@ -119,7 +119,7 @@ You can deploy this project using:
 
 
 - [Video presentation](https://www.loom.com/share/5a3233e42bb241dea30aa7b2685b0ca8)
-- [Live Demo](https://react-capstone-project-git-dev-jecode93.vercel.app)
+- [Live Demo](https://jecode93-country-weather.vercel.app)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
